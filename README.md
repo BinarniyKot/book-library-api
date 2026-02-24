@@ -81,6 +81,10 @@ API will be available at: http://localhost (port 80)
 - `search` - search by title, author or genre
 - `per_page` - number of records per page (default: 15, max: 100)
 
+### Rate limiting
+
+API requests are limited to **60 per minute per IP** (configurable via `config/books.php` → `throttle_per_minute`). When exceeded, the server returns `429 Too Many Requests`.
+
 ### Book model
 
 | Field | Type | Description |
