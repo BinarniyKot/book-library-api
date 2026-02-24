@@ -60,11 +60,21 @@ php artisan key:generate
 # Start containers (Sail will create .env with MySQL if needed)
 ./vendor/bin/sail up -d
 
+# Verify containers are running
+docker compose ps
+
 # Migrations and fixtures
 ./vendor/bin/sail artisan migrate:fresh --seed
 ```
 
-API will be available at: http://localhost (port 80)
+- **API**: http://localhost (port 80)
+- **Swagger UI**: http://localhost/docs/api
+
+### Stop containers
+
+```bash
+./vendor/bin/sail down
+```
 
 ## 📚 API Endpoints
 
@@ -189,24 +199,6 @@ tests/
 │   ├── BookControllerTest.php
 │   └── ExampleTest.php
 └── TestCase.php
-```
-
-## 📤 Publishing to GitLab
-
-Recommended commits with clear messages:
-
-```
-feat: add Laravel 12 REST API for book library
-feat: add Book model with migration (title, publisher, author, genre, publication_date, words_count, price_usd)
-feat: implement GET/POST/PATCH/DELETE API endpoints for books
-feat: add request validation (StoreBookRequest, UpdateBookRequest, IndexBookRequest)
-test: add PHPUnit feature and unit tests for Book API (with mocks)
-feat: add Swagger UI documentation (Scramble/OpenAPI)
-feat: add Docker support via Laravel Sail
-feat: add database seeders with fixtures (20 sample books)
-docs: add README with setup and run instructions
-feat: add automatic setup script (setup.sh)
-feat: add per_page validation for list endpoint (max 100)
 ```
 
 ## License
