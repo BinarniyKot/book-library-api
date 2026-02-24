@@ -1,0 +1,57 @@
+// Welcome page styles (Book Library API)
+
+@use 'variables' as *;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $font-family;
+    background: $color-bg;
+    color: $color-text;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: $spacing-lg;
+}
+
+.card {
+    background: $color-card-bg;
+    padding: $spacing-xl;
+    border-radius: $card-border-radius;
+    box-shadow: $card-shadow;
+    max-width: $card-max-width;
+}
+
+h1 {
+    font-size: $font-size-title;
+    font-weight: $font-weight-title;
+    margin-bottom: $spacing-xs;
+}
+
+p {
+    color: $color-text-muted;
+    margin-bottom: $spacing-md;
+    line-height: $line-height-body;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-sm;
+
+    a {
+        color: $color-link;
+        font-weight: $font-weight-link;
+        text-decoration: underline;
+        text-underline-offset: $link-underline-offset;
+
+        &:hover {
+            opacity: $hover-opacity;
+        }
+    }
+}

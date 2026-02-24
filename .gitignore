@@ -1,0 +1,46 @@
+# Dependencies
+/vendor
+/node_modules
+
+# Environment & secrets
+.env
+.env.backup
+.env.production
+.env.*.local
+*.key
+
+# Build & cache
+/public/build
+/public/hot
+/public/storage
+/storage/*.key
+/storage/pail
+
+# Logs
+*.log
+
+# Laravel & PHP
+.phpunit.result.cache
+.phpunit.cache
+.phpactor.json
+_ide_helper.php
+_ide_helper_models.php
+
+# Composer
+auth.json
+
+# IDE & editors
+/.fleet
+/.idea
+/.nova
+/.vscode
+/.zed
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local config
+Homestead.json
+Homestead.yaml
+/.vagrant

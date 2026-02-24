@@ -1,0 +1,30 @@
+// SCSS variables for welcome page (Book Library API)
+
+// Colors
+$color-bg: #fdfdfc;
+$color-text: #1b1b18;
+$color-text-muted: #706f6c;
+$color-card-bg: #fff;
+$color-link: #f53003;
+$color-shadow: rgba(0, 0, 0, 0.08);
+
+// Spacing
+$spacing-xs: 0.5rem;
+$spacing-sm: 0.75rem;
+$spacing-md: 1.5rem;
+$spacing-lg: 2rem;
+$spacing-xl: 2.5rem;
+
+// Typography
+$font-family: 'Instrument Sans', system-ui, sans-serif;
+$font-size-title: 1.5rem;
+$font-weight-title: 600;
+$font-weight-link: 500;
+$line-height-body: 1.5;
+
+// Layout
+$card-max-width: 400px;
+$card-border-radius: $spacing-xs;
+$card-shadow: 0 1px 3px $color-shadow;
+$link-underline-offset: 4px;
+$hover-opacity: 0.8;
