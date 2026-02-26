@@ -5,7 +5,7 @@ REST API application for a book library built with Laravel. Allows tracking of a
 ## 🚀 Quick Start
 
 ```bash
-git clone https://gitlab.com/binarniy_kot/book-library-api
+git clone https://github.com/BinarniyKot/book-library-api.git
 cd book-library-api
 ./setup.sh
 php artisan serve
